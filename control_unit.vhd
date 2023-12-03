@@ -24,16 +24,16 @@ ARCHITECTURE RTL OF control_unit IS
 BEGIN
   PROCESS (i_opcode, i_ir_indicator) BEGIN
     IF (i_rst = '1') THEN
-      o_alu_control <= "XX"; 
+      o_alu_control <= "XX"; -- XX
       o_reg_write <= '0';
       o_mem_write <= '0';
-      o_lw_vs_imm <= 'X'; 
-      o_jr_src <= 'X'; 
-      o_alu_src <= 'X'; 
-      o_mem_2_reg <= 'X'; 
-      o_jump <= 'X';
-      o_branch_en <= 'X'; 
-      o_sw_en <= 'X'; 
+      o_lw_vs_imm <= 'X'; -- X
+      o_jr_src <= 'X'; -- X
+      o_alu_src <= 'X'; -- X
+      o_mem_2_reg <= 'X'; -- X
+      o_jump <= 'X'; -- X
+      o_branch_en <= 'X'; -- X
+      o_sw_en <= 'X'; -- X
     ELSE
 
       CASE i_opcode IS
@@ -125,44 +125,44 @@ BEGIN
           o_lw_vs_imm <= '0';
           o_jr_src <= '0';
           o_alu_src <= '1';
-          o_mem_2_reg <= 'X';  
+          o_mem_2_reg <= 'X'; -- X
           o_jump <= '0';
           o_branch_en <= '0';
           o_sw_en <= '1';
         WHEN "0010000000" => --JR
-          o_alu_control <= "XX";  
+          o_alu_control <= "XX"; -- XX
           o_reg_write <= '0';
           o_mem_write <= '0';
-          o_lw_vs_imm <= 'X';  
+          o_lw_vs_imm <= '0'; -- X
           o_jr_src <= '1';
-          o_alu_src <= 'X';  
-          o_mem_2_reg <= 'X';  
+          o_alu_src <= 'X'; -- X
+          o_mem_2_reg <= 'X'; -- X
           o_jump <= '1';
           o_branch_en <= '0';
           o_sw_en <= '0';
         WHEN "0100000000" => --BEQZ
-          o_alu_control <= "XX";  
+          o_alu_control <= "XX"; -- XX
           o_reg_write <= '0';
           o_mem_write <= '0';
-          o_lw_vs_imm <= 'X';  
-          o_jr_src <= 'X';  
-          o_alu_src <= 'X';  
-          o_mem_2_reg <= 'X';  
-          o_jump <= 'X';  
+          o_lw_vs_imm <= '0'; -- X
+          o_jr_src <= '1'; -- X
+          o_alu_src <= 'X'; -- X
+          o_mem_2_reg <= 'X'; -- X
+          o_jump <= '0'; -- X
           o_branch_en <= '1';
-          o_sw_en <= '1';
+          o_sw_en <= '0';
 
         WHEN OTHERS =>
-          o_alu_control <= "XX";  
+          o_alu_control <= "XX"; -- XX
           o_reg_write <= '0';
           o_mem_write <= '0';
-          o_lw_vs_imm <= 'X';  
-          o_jr_src <= 'X';  
-          o_alu_src <= 'X';  
-          o_mem_2_reg <= 'X';  
-          o_jump <= 'X';  
-          o_branch_en <= 'X';  
-          o_sw_en <= 'X';  
+          o_lw_vs_imm <= 'X'; -- X
+          o_jr_src <= 'X'; -- X
+          o_alu_src <= 'X'; -- X
+          o_mem_2_reg <= 'X'; -- X
+          o_jump <= 'X'; -- X
+          o_branch_en <= 'X'; -- X
+          o_sw_en <= 'X'; -- X
 
       END CASE;
     END IF;
