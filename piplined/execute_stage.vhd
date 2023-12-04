@@ -28,7 +28,7 @@ ENTITY execut_stage IS
 
 END ENTITY execut_stage;
 
-ARCHITECTURE RTL OF execut_stage IS
+ARCHITECTURE STRUCT OF execut_stage IS
 
   COMPONENT alu IS
     PORT (
@@ -101,4 +101,4 @@ BEGIN
     o_result => o_alu_outE
   );
 
-END ARCHITECTURE RTL;
+END ARCHITECTURE STRUCT;
