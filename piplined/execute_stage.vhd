@@ -9,8 +9,8 @@ ENTITY execut_stage IS
     i_rst : STD_LOGIC;
     i_clr : STD_LOGIC;
     -- alu srcs 
-    i_rf_rd1 : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
-    i_rf_rd2 : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+    i_rf_rd1E : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+    i_rf_rd2E : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
 
     -- only for srcB
     i_sign_extE : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
