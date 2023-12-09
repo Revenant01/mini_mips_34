@@ -156,8 +156,8 @@ BEGIN
           o_alu_control <= "XX"; -- XX
           o_reg_write <= '0';
           o_mem_write <= '0';
-          o_lw_vs_imm <= 'X'; -- X
-          o_jr_src <= 'X'; -- X
+          o_lw_vs_imm <= '0'; -- this is to be a zero, in order to maintaitn the launch of the pc to be correct
+          o_jr_src <= '0'; 
           o_alu_src <= 'X'; -- X
           o_mem_2_reg <= 'X'; -- X
           o_jump <= 'X'; -- X
