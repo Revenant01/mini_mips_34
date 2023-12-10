@@ -45,8 +45,8 @@ ENTITY decode_stage IS
 
     o_pc_branch : OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
 
-    o_branchD : IN STD_LOGIC;
-    o_jumpD : IN STD_LOGIC
+    o_branchD : OUT STD_LOGIC;
+    o_jumpD : OUT STD_LOGIC
   );
 
 END decode_stage;
