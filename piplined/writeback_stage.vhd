@@ -9,14 +9,14 @@ ENTITY writeback_stage IS
     i_read_dataW : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
 
     -- mux control signal
-    i_mem_2_regW : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+    i_mem_2_regW : IN STD_LOGIC;
 
     -- output signal 
-    o_resultW : OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
+    o_resultW : OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
   );
 END ENTITY writeback_stage;
 
-ARCHITECTURE STRUCT OF writeback_stage
+ARCHITECTURE STRUCT OF writeback_stage IS
 
   COMPONENT MUX2X1 IS
     GENERIC (width : INTEGER);
@@ -25,7 +25,8 @@ ARCHITECTURE STRUCT OF writeback_stage
       i_sel : IN STD_LOGIC;
       o_out : OUT STD_LOGIC_VECTOR (width - 1 DOWNTO 0)
     );
-
+    END COMPONENT;
+    
   BEGIN
 
   m_mux_WB : MUX2X1
