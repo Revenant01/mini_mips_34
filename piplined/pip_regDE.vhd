@@ -23,8 +23,8 @@ ENTITY pip_regDE IS PORT (
   i_alu_srcD : IN STD_LOGIC;
   o_alu_srcE : OUT STD_LOGIC;
 
-  i_alu_control : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
-  o_alu_control : OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
+  i_alu_controlD : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
+  o_alu_controlE : OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
  
  
   -- register files outputs 
