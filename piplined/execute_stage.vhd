@@ -4,7 +4,7 @@ USE IEEE.std_logic_unsigned.ALL;
 
 ENTITY execut_stage IS
   PORT (
-
+  
     i_clk : STD_LOGIC;
     i_rst : STD_LOGIC;
     i_clr : STD_LOGIC;
@@ -38,13 +38,13 @@ ENTITY execut_stage IS
     i_forwardBE : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
 
     -- outputs  
-    o_alu_outM : OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
+    o_alu_outM : OUT STD_LOGIC_VECTOR (31 DOWNTO 0); 
     o_write_dataM : OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
 
-    -- propagating, but also used for hazard unit 
+    -- propagating
     i_RdE : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
     o_RdM : OUT STD_LOGIC_VECTOR (4 DOWNTO 0);
-
+    
     o_RdE : OUT STD_LOGIC_VECTOR (4 DOWNTO 0);
 
     -- hazard unit registers input--> outputs 
@@ -88,7 +88,7 @@ ARCHITECTURE STRUCT OF execut_stage IS
 
   END COMPONENT;
 
-  COMPONENT pipe_reg_EM IS
+  COMPONENT pip_regEM IS
     PORT (
       i_clk : IN STD_LOGIC;
       i_rst : IN STD_LOGIC;
@@ -129,7 +129,7 @@ BEGIN
   m_mux_srcA : MUX3X1
   GENERIC MAP(32)
   PORT MAP(
-    i_in0 => i_rf_rd1,
+    i_in0 => i_rf_rd1E,
     i_in1 => i_alu_outM,
     i_in2 => i_resultW,
     i_sel => i_forwardAE,
@@ -139,7 +139,7 @@ BEGIN
   m_mux1_srcB : MUX3X1
   GENERIC MAP(32)
   PORT MAP(
-    i_in0 => i_rf_rd2,
+    i_in0 => i_rf_rd2E,
     i_in1 => i_alu_outM,
     i_in2 => i_resultW,
     i_sel => i_forwardBE,
@@ -163,7 +163,7 @@ BEGIN
     o_result => s_alu_out
   );
 
-  m_pip_reg : pipe_reg_EM
+  m_pip_reg : pip_regEM
   PORT MAP(
     i_clk => i_clk,
     i_rst => i_rst,
