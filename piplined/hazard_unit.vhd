@@ -5,7 +5,7 @@ USE IEEE.std_logic_unsigned.ALL;
 ENTITY hazard_unit IS
   PORT (
     o_stallF : OUT STD_LOGIC;
-   
+
     o_stallD : OUT STD_LOGIC;
     i_RsD : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
     i_RtD : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
@@ -21,7 +21,15 @@ ENTITY hazard_unit IS
     o_forwardAE : OUT STD_LOGIC;
     o_forwardBE : OUT STD_LOGIC;
 
-    i_mem_2_regM : in std_logic;
-    i_reg_writeM : in std_logic: 
-    i_reg_writeW : in std_logic;
+    i_mem_2_regM : IN STD_LOGIC;
+    i_reg_writeM : IN STD_LOGIC;
+    i_reg_writeW : IN STD_LOGIC
   );
+
+END hazard_unit;
+
+ARCHITECTURE RTL OF hazard_unit IS
+
+BEGIN
+
+END ARCHITECTURE RTL;
