@@ -13,7 +13,7 @@ ENTITY pipe_reg_FD IS
   );
 END pipe_reg_FD;
 
-ARCHITECTURE Behavioral OF pipe_reg_FD IS
+ARCHITECTURE RTL OF pipe_reg_FD IS
 
   SIGNAL s_EN : STD_LOGIC := '0';
 
@@ -27,11 +27,11 @@ BEGIN
     IF (i_rst = '1') THEN
       o_instD <= (OTHERS => '0');
     ELSE
-      IF (EN = '1') THEN
+      IF (s_EN = '1') THEN
         IF rising_edge (i_clk) THEN
           o_instD <= i_instF;
           IF (i_clr = '1') THEN
-            instD <= (OTHERS => '0');
+            o_instD <= (OTHERS => '0');
           END IF;
         END IF;
       END IF;
@@ -39,4 +39,4 @@ BEGIN
 
   END PROCESS;
 
-END Behavioral;
+END ARCHITECTURE RTL;
