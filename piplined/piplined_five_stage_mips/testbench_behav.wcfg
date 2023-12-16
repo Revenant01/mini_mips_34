@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="470001fs"></ZoomEndTime>
+      <Cursor1Time time="470000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="223"></NameColumnWidth>
+      <ValueColumnWidth column_width="108"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="/testbench/dut/m_fs/i_clk" type="logic">
+      <obj_property name="ElementShortName">i_clk</obj_property>
+      <obj_property name="ObjectShortName">i_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_fs/i_rst" type="logic">
+      <obj_property name="ElementShortName">i_rst</obj_property>
+      <obj_property name="ObjectShortName">i_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_fs/i_jump_enD" type="logic">
+      <obj_property name="ElementShortName">i_jump_enD</obj_property>
+      <obj_property name="ObjectShortName">i_jump_enD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_fs/i_branchD" type="logic">
+      <obj_property name="ElementShortName">i_branchD</obj_property>
+      <obj_property name="ObjectShortName">i_branchD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_fs/i_pc_newD" type="array">
+      <obj_property name="ElementShortName">i_pc_newD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_pc_newD[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_fs/o_instD" type="array">
+      <obj_property name="ElementShortName">o_instD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_instD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_fs/s_mux1_res" type="array">
+      <obj_property name="ElementShortName">s_mux1_res[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_mux1_res[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_fs/s_pc_next" type="array">
+      <obj_property name="ElementShortName">s_pc_next[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_pc_next[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_fs/s_pc" type="array">
+      <obj_property name="ElementShortName">s_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_pc[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_fs/s_instF" type="array">
+      <obj_property name="ElementShortName">s_instF[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_instF[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_fs/s_pc_plus4" type="array">
+      <obj_property name="ElementShortName">s_pc_plus4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_pc_plus4[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_fs/s_clr_pip_reg" type="logic">
+      <obj_property name="ElementShortName">s_clr_pip_reg</obj_property>
+      <obj_property name="ObjectShortName">s_clr_pip_reg</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_fs/m_imem/i_a" type="array">
+      <obj_property name="ElementShortName">i_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_a[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_fs/m_imem/o_inst" type="array">
+      <obj_property name="ElementShortName">o_inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_inst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_fs/m_pip_reg/i_clr" type="logic">
+      <obj_property name="ElementShortName">i_clr</obj_property>
+      <obj_property name="ObjectShortName">i_clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_fs/m_pip_reg/i_instF" type="array">
+      <obj_property name="ElementShortName">i_instF[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_instF[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_fs/m_pip_reg/o_instD" type="array">
+      <obj_property name="ElementShortName">o_instD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_instD[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_ds/m_rf/i_we3" type="logic">
+      <obj_property name="ElementShortName">i_we3</obj_property>
+      <obj_property name="ObjectShortName">i_we3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_ds/m_rf/i_ra1" type="array">
+      <obj_property name="ElementShortName">i_ra1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">i_ra1[4:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_ds/m_rf/i_ra2" type="array">
+      <obj_property name="ElementShortName">i_ra2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">i_ra2[4:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_ds/m_rf/i_wa3" type="array">
+      <obj_property name="ElementShortName">i_wa3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">i_wa3[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_ds/m_rf/i_wd3" type="array">
+      <obj_property name="ElementShortName">i_wd3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_wd3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_ds/m_rf/o_rd1" type="array">
+      <obj_property name="ElementShortName">o_rd1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_rd1[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_ds/m_rf/o_rd2" type="array">
+      <obj_property name="ElementShortName">o_rd2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_rd2[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem" type="array">
+      <obj_property name="ElementShortName">mem[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem[31:0][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[31]" type="array">
+         <obj_property name="ElementShortName">[31][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[31][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[30]" type="array">
+         <obj_property name="ElementShortName">[30][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[30][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[29]" type="array">
+         <obj_property name="ElementShortName">[29][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[29][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[28]" type="array">
+         <obj_property name="ElementShortName">[28][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[28][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[27]" type="array">
+         <obj_property name="ElementShortName">[27][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[27][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[26]" type="array">
+         <obj_property name="ElementShortName">[26][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[26][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[25]" type="array">
+         <obj_property name="ElementShortName">[25][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[25][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[24]" type="array">
+         <obj_property name="ElementShortName">[24][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[24][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[23]" type="array">
+         <obj_property name="ElementShortName">[23][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[23][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[22]" type="array">
+         <obj_property name="ElementShortName">[22][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[22][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[21]" type="array">
+         <obj_property name="ElementShortName">[21][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[21][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[20]" type="array">
+         <obj_property name="ElementShortName">[20][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[20][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[19]" type="array">
+         <obj_property name="ElementShortName">[19][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[19][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[18]" type="array">
+         <obj_property name="ElementShortName">[18][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[18][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[17]" type="array">
+         <obj_property name="ElementShortName">[17][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[17][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[16]" type="array">
+         <obj_property name="ElementShortName">[16][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[16][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[15]" type="array">
+         <obj_property name="ElementShortName">[15][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[14]" type="array">
+         <obj_property name="ElementShortName">[14][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[13]" type="array">
+         <obj_property name="ElementShortName">[13][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[12]" type="array">
+         <obj_property name="ElementShortName">[12][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[11]" type="array">
+         <obj_property name="ElementShortName">[11][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[10]" type="array">
+         <obj_property name="ElementShortName">[10][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[9]" type="array">
+         <obj_property name="ElementShortName">[9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[8]" type="array">
+         <obj_property name="ElementShortName">[8][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[7]" type="array">
+         <obj_property name="ElementShortName">[7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[6]" type="array">
+         <obj_property name="ElementShortName">[6][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[5]" type="array">
+         <obj_property name="ElementShortName">[5][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[4]" type="array">
+         <obj_property name="ElementShortName">[4][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[3]" type="array">
+         <obj_property name="ElementShortName">[3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[2]" type="array">
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[1]" type="array">
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/m_ds/m_rf/mem[0]" type="array">
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_ds/i_instD" type="array">
+      <obj_property name="ElementShortName">i_instD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_instD[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_ds/s_branchD" type="logic">
+      <obj_property name="ElementShortName">s_branchD</obj_property>
+      <obj_property name="ObjectShortName">s_branchD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m_ms/dmem_inst/mem" type="array">
+      <obj_property name="ElementShortName">mem[63:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem[63:0][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

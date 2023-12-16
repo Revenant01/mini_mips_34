@@ -1,0 +1,40 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 24998b896b3846b3aa225da4ed9d6499 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.generic_reg [\generic_reg(w=32)\]
+Compiling architecture rtl of entity xil_defaultlib.imem [imem_default]
+Compiling architecture rtl of entity xil_defaultlib.adder [adder_default]
+Compiling architecture rtl of entity xil_defaultlib.MUX2X1 [\MUX2X1(width=32)\]
+Compiling architecture rtl of entity xil_defaultlib.pipe_reg_FD [pipe_reg_fd_default]
+Compiling architecture structural of entity xil_defaultlib.fetch_stage [fetch_stage_default]
+Compiling architecture rtl of entity xil_defaultlib.control_unit [control_unit_default]
+Compiling architecture rtl of entity xil_defaultlib.MUX2X1 [\MUX2X1(width=5)\]
+Compiling architecture rtl of entity xil_defaultlib.sign_extend [sign_extend_default]
+Compiling architecture rtl of entity xil_defaultlib.reg_file [reg_file_default]
+Compiling architecture sequential of entity xil_defaultlib.pip_regDE [pip_regde_default]
+Compiling architecture structural of entity xil_defaultlib.decode_stage [decode_stage_default]
+Compiling architecture rtl of entity xil_defaultlib.MUX3X1 [\MUX3X1(width=32)\]
+Compiling architecture rtl of entity xil_defaultlib.alu [alu_default]
+Compiling architecture sequential of entity xil_defaultlib.pip_regEM [pip_regem_default]
+Compiling architecture struct of entity xil_defaultlib.execut_stage [execut_stage_default]
+Compiling architecture rtl of entity xil_defaultlib.dmem [dmem_default]
+Compiling architecture sequential of entity xil_defaultlib.pip_regMW [pip_regmw_default]
+Compiling architecture struct of entity xil_defaultlib.meomry_stage [meomry_stage_default]
+Compiling architecture struct of entity xil_defaultlib.writeback_stage [writeback_stage_default]
+Compiling architecture rtl of entity xil_defaultlib.hazard_unit [hazard_unit_default]
+Compiling architecture structural of entity xil_defaultlib.mips [mips_default]
+Compiling architecture test of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_behav

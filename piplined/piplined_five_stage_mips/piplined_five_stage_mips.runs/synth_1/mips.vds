@@ -1,0 +1,288 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Dec 16 22:39:48 2023
+# Process ID: 10728
+# Current directory: D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.runs/synth_1
+# Command line: vivado.exe -log mips.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mips.tcl
+# Log file: D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.runs/synth_1/mips.vds
+# Journal file: D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mips.tcl -notrace
+Command: synth_design -top mips -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25440
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1024.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mips' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/mips.vhd:11]
+INFO: [Synth 8-3491] module 'fetch_stage' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/fetch_stage.vhd:5' bound to instance 'm_fs' of component 'fetch_stage' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/mips.vhd:260]
+INFO: [Synth 8-638] synthesizing module 'fetch_stage' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/fetch_stage.vhd:23]
+	Parameter w bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'generic_reg' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/generic_reg.vhd:4' bound to instance 'm_pc_reg' of component 'generic_reg' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/fetch_stage.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'generic_reg' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/generic_reg.vhd:14]
+	Parameter w bound to: 32 - type: integer 
+WARNING: [Synth 8-614] signal 's_EN' is read in the process but is not in the sensitivity list [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/generic_reg.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'generic_reg' (1#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/generic_reg.vhd:14]
+INFO: [Synth 8-3491] module 'imem' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/imem.vhd:7' bound to instance 'm_imem' of component 'imem' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/fetch_stage.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'imem' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/imem.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'imem' (2#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/imem.vhd:14]
+INFO: [Synth 8-3491] module 'adder' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/adder.vhd:5' bound to instance 'm_adder' of component 'adder' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/fetch_stage.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'adder' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/adder.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'adder' (3#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'MUX2X1' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX2X1.vhd:4' bound to instance 'm_pc_mux1' of component 'MUX2X1' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/fetch_stage.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'MUX2X1' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX2X1.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MUX2X1' (4#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX2X1.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'MUX2X1' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX2X1.vhd:4' bound to instance 'm_pc_mux2' of component 'MUX2X1' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/fetch_stage.vhd:117]
+INFO: [Synth 8-3491] module 'pipe_reg_FD' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/pip_reg_FD.vhd:3' bound to instance 'm_pip_reg' of component 'pipe_reg_FD' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/fetch_stage.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'pipe_reg_FD' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/pip_reg_FD.vhd:16]
+WARNING: [Synth 8-614] signal 's_EN' is read in the process but is not in the sensitivity list [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/pip_reg_FD.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'pipe_reg_FD' (5#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/pip_reg_FD.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'fetch_stage' (6#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/fetch_stage.vhd:23]
+INFO: [Synth 8-3491] module 'decode_stage' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/decode_stage.vhd:3' bound to instance 'm_ds' of component 'decode_stage' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/mips.vhd:272]
+INFO: [Synth 8-638] synthesizing module 'decode_stage' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/decode_stage.vhd:54]
+INFO: [Synth 8-3491] module 'control_unit' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/control_unit.vhd:4' bound to instance 'm_controller' of component 'control_unit' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/decode_stage.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/control_unit.vhd:22]
+WARNING: [Synth 8-614] signal 'i_rst' is read in the process but is not in the sensitivity list [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/control_unit.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (7#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/control_unit.vhd:22]
+	Parameter width bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'MUX2X1' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX2X1.vhd:4' bound to instance 'm_mux1_ra1' of component 'MUX2X1' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/decode_stage.vhd:210]
+INFO: [Synth 8-638] synthesizing module 'MUX2X1__parameterized2' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX2X1.vhd:13]
+	Parameter width bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MUX2X1__parameterized2' (7#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX2X1.vhd:13]
+	Parameter width bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'MUX2X1' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX2X1.vhd:4' bound to instance 'm_mux2_ra1' of component 'MUX2X1' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/decode_stage.vhd:219]
+	Parameter width bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'MUX2X1' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX2X1.vhd:4' bound to instance 'm_mux_ra2' of component 'MUX2X1' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/decode_stage.vhd:228]
+	Parameter width bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'MUX2X1' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX2X1.vhd:4' bound to instance 'm_mux_sign_ext' of component 'MUX2X1' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/decode_stage.vhd:237]
+INFO: [Synth 8-3491] module 'sign_extend' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/sign_extend.vhd:4' bound to instance 'm_sign_ext' of component 'sign_extend' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/decode_stage.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'sign_extend' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/sign_extend.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'sign_extend' (8#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/sign_extend.vhd:11]
+INFO: [Synth 8-3491] module 'reg_file' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/reg_file.vhd:5' bound to instance 'm_rf' of component 'reg_file' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/decode_stage.vhd:252]
+INFO: [Synth 8-638] synthesizing module 'reg_file' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/reg_file.vhd:17]
+WARNING: [Synth 8-614] signal 'mem' is read in the process but is not in the sensitivity list [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/reg_file.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'reg_file' (9#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/reg_file.vhd:17]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'MUX2X1' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX2X1.vhd:4' bound to instance 'm_mux_rd1' of component 'MUX2X1' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/decode_stage.vhd:265]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'MUX2X1' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX2X1.vhd:4' bound to instance 'm_mux_rd2' of component 'MUX2X1' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/decode_stage.vhd:274]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'MUX2X1' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX2X1.vhd:4' bound to instance 'm_mux_pc' of component 'MUX2X1' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/decode_stage.vhd:283]
+INFO: [Synth 8-3491] module 'adder' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/adder.vhd:5' bound to instance 'm_adder' of component 'adder' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/decode_stage.vhd:292]
+INFO: [Synth 8-3491] module 'pip_regDE' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/pip_regDE.vhd:4' bound to instance 'm_pip_reg' of component 'pip_regDE' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/decode_stage.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'pip_regDE' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/pip_regDE.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'pip_regDE' (10#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/pip_regDE.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'decode_stage' (11#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/decode_stage.vhd:54]
+INFO: [Synth 8-3491] module 'execut_stage' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/execute_stage.vhd:5' bound to instance 'm_es' of component 'execut_stage' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/mips.vhd:302]
+INFO: [Synth 8-638] synthesizing module 'execut_stage' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/execute_stage.vhd:60]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'MUX3X1' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX3X1.vhd:4' bound to instance 'm_mux_srcA' of component 'MUX3X1' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/execute_stage.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'MUX3X1' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX3X1.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MUX3X1' (12#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX3X1.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'MUX3X1' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX3X1.vhd:4' bound to instance 'm_mux1_srcB' of component 'MUX3X1' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/execute_stage.vhd:139]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'MUX2X1' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX2X1.vhd:4' bound to instance 'm_mux2_srcB' of component 'MUX2X1' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/execute_stage.vhd:149]
+INFO: [Synth 8-3491] module 'alu' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/alu.vhd:5' bound to instance 'm_alu' of component 'alu' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/execute_stage.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'alu' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/alu.vhd:13]
+INFO: [Synth 8-226] default block is never used [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/alu.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'alu' (13#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/alu.vhd:13]
+INFO: [Synth 8-3491] module 'pip_regEM' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/pip_regEM.vhd:3' bound to instance 'm_pip_reg' of component 'pip_regEM' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/execute_stage.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'pip_regEM' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/pip_regEM.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'pip_regEM' (14#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/pip_regEM.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'execut_stage' (15#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/execute_stage.vhd:60]
+INFO: [Synth 8-3491] module 'meomry_stage' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/meomry_stage.vhd:5' bound to instance 'm_ms' of component 'meomry_stage' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/mips.vhd:333]
+INFO: [Synth 8-638] synthesizing module 'meomry_stage' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/meomry_stage.vhd:38]
+INFO: [Synth 8-3491] module 'dmem' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/dmem.vhd:5' bound to instance 'dmem_inst' of component 'dmem' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/meomry_stage.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'dmem' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/dmem.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (16#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/dmem.vhd:14]
+INFO: [Synth 8-3491] module 'pip_regMW' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/pip_regMW.vhd:3' bound to instance 'm_pip_reg' of component 'pip_regMW' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/meomry_stage.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'pip_regMW' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/pip_regMW.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'pip_regMW' (17#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/pip_regMW.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'meomry_stage' (18#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/meomry_stage.vhd:38]
+INFO: [Synth 8-3491] module 'writeback_stage' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/writeback_stage.vhd:4' bound to instance 'm_ws' of component 'writeback_stage' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/mips.vhd:351]
+INFO: [Synth 8-638] synthesizing module 'writeback_stage' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/writeback_stage.vhd:19]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'MUX2X1' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/MUX2X1.vhd:4' bound to instance 'm_mux_WB' of component 'MUX2X1' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/writeback_stage.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'writeback_stage' (19#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/writeback_stage.vhd:19]
+INFO: [Synth 8-3491] module 'hazard_unit' declared at 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/hazard_unit.vhd:5' bound to instance 'm_hu' of component 'hazard_unit' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/mips.vhd:359]
+INFO: [Synth 8-638] synthesizing module 'hazard_unit' [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/hazard_unit.vhd:38]
+WARNING: [Synth 8-614] signal 'i_branchD' is read in the process but is not in the sensitivity list [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/hazard_unit.vhd:72]
+WARNING: [Synth 8-614] signal 'i_reg_writeE' is read in the process but is not in the sensitivity list [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/hazard_unit.vhd:72]
+WARNING: [Synth 8-614] signal 'i_RdE' is read in the process but is not in the sensitivity list [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/hazard_unit.vhd:72]
+WARNING: [Synth 8-614] signal 'i_mem_2_regM' is read in the process but is not in the sensitivity list [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/hazard_unit.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'hazard_unit' (20#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/hazard_unit.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'mips' (21#1) [D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.srcs/sources_1/new/mips.vhd:11]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1024.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1024.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 41    
+	                5 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 13    
+	  33 Input   32 Bit        Muxes := 2     
+	   4 Input   32 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 8     
+	   9 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   9 Input    1 Bit        Muxes := 9     
+	   2 Input    1 Bit        Muxes := 36    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1024.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1024.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1024.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1024.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1024.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1024.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1024.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1024.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1024.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1024.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1024.336 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1024.336 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1024.336 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1047.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+87 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 1047.871 ; gain = 23.535
+INFO: [Common 17-1381] The checkpoint 'D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/Piplined_MIPS/piplined_five_stage_mips/piplined_five_stage_mips.runs/synth_1/mips.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mips_utilization_synth.rpt -pb mips_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 16 22:40:30 2023...
