@@ -11,7 +11,7 @@ ENTITY generic_reg IS
     o_q : OUT STD_LOGIC_VECTOR(w - 1 DOWNTO 0));
 END generic_reg;
 
-ARCHITECTURE Behavioral OF generic_reg IS
+ARCHITECTURE sequential OF generic_reg IS
 
   SIGNAL s_EN : STD_LOGIC := '0';
 
@@ -23,7 +23,7 @@ BEGIN
   BEGIN
 
     IF (i_rst = '1') THEN
-      i_q <= (OTHERS => '0');
+      o_q <= (OTHERS => '0');
     ELSE
       IF (s_EN = '1') THEN
         IF (i_clk'event AND i_clk = '1') THEN
@@ -34,4 +34,4 @@ BEGIN
 
   END PROCESS;
 
-END Behavioral;
+END sequential;
