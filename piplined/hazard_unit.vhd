@@ -5,9 +5,9 @@ USE IEEE.std_logic_unsigned.ALL;
 ENTITY hazard_unit IS
   PORT (
     o_stallF : OUT STD_LOGIC;
-
-    o_stallD : OUT STD_LOGIC;
-    i_RsD : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+    
+    o_stallD : OUT STD_LOGIC; 
+    i_RsD : IN STD_LOGIC_VECTOR (4 DOWNTO 0); 
     i_RtD : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
     i_branchD : IN STD_LOGIC;
     o_forwardAD : OUT STD_LOGIC;
