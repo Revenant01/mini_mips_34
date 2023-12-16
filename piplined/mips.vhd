@@ -215,7 +215,6 @@ ARCHITECTURE structural OF mips IS
   SIGNAL s_jump_en_DF : STD_LOGIC := '0';
   SIGNAL s_branch_DF : STD_LOGIC := '0';
   SIGNAL s_pc_new_DF : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
-  SIGNAL s_inst_FD : STD_LOGIC_VECTOR (31 DOWNTO 0) := (OTHERS => '0');
   SIGNAL s_instFD : STD_LOGIC_VECTOR (31 DOWNTO 0);
 
   SIGNAL s_reg_write_DE : STD_LOGIC := '0';
