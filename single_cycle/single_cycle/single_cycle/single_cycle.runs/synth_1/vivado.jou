@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Dec 11 16:09:50 2023
+# Process ID: 23540
+# Current directory: D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/single_cycle/single_cycle/single_cycle.runs/synth_1
+# Command line: vivado.exe -log top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
+# Log file: D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/single_cycle/single_cycle/single_cycle.runs/synth_1/top_module.vds
+# Journal file: D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/single_cycle/single_cycle/single_cycle.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_module.tcl -notrace

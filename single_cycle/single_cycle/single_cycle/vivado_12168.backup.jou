@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Dec  3 02:23:05 2023
+# Process ID: 12168
+# Current directory: D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/single_cycle/single_cycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23460 D:\Semster7\ELCT707 - CA\Project\MIPS\MIPS_V2\single_cycle\single_cycle\single_cycle.xpr
+# Log file: D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/single_cycle/single_cycle/vivado.log
+# Journal file: D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/single_cycle/single_cycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/single_cycle/single_cycle/single_cycle.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {D:/Semster7/ELCT707 - CA/Project/MIPS/MIPS_V2/single_cycle/single_cycle/testbench_behav.wcfg}
+source testbench.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+update_compile_order -fileset sources_1
+relaunch_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+relaunch_sim
+close_sim

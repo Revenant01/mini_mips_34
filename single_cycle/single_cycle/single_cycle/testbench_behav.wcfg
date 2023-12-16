@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="200001fs"></ZoomEndTime>
+      <Cursor1Time time="115000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="206"></NameColumnWidth>
+      <ValueColumnWidth column_width="104"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="45" />
+   <wvobject fp_name="/testbench/dut/mips1/i_clk" type="logic">
+      <obj_property name="ElementShortName">i_clk</obj_property>
+      <obj_property name="ObjectShortName">i_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/i_rst" type="logic">
+      <obj_property name="ElementShortName">i_rst</obj_property>
+      <obj_property name="ObjectShortName">i_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/i_read_data" type="array">
+      <obj_property name="ElementShortName">i_read_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_read_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/b_pc" type="array">
+      <obj_property name="ElementShortName">b_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b_pc[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/i_inst" type="array">
+      <obj_property name="ElementShortName">i_inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_inst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/b_write_data" type="array">
+      <obj_property name="ElementShortName">b_write_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b_write_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/b_alu_out" type="array">
+      <obj_property name="ElementShortName">b_alu_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b_alu_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/o_mem_write" type="logic">
+      <obj_property name="ElementShortName">o_mem_write</obj_property>
+      <obj_property name="ObjectShortName">o_mem_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_pc_next" type="array">
+      <obj_property name="ElementShortName">s_pc_next[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_pc_next[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_pc_plus4" type="array">
+      <obj_property name="ElementShortName">s_pc_plus4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_pc_plus4[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_pc_jump" type="array">
+      <obj_property name="ElementShortName">s_pc_jump[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_pc_jump[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_pc_mux1_res" type="array">
+      <obj_property name="ElementShortName">s_pc_mux1_res[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_pc_mux1_res[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_pc_mux3_res" type="array">
+      <obj_property name="ElementShortName">s_pc_mux3_res[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_pc_mux3_res[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_branch" type="logic">
+      <obj_property name="ElementShortName">s_branch</obj_property>
+      <obj_property name="ObjectShortName">s_branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_alu_control" type="array">
+      <obj_property name="ElementShortName">s_alu_control[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_alu_control[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_reg_write" type="logic">
+      <obj_property name="ElementShortName">s_reg_write</obj_property>
+      <obj_property name="ObjectShortName">s_reg_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_mem_2_reg" type="logic">
+      <obj_property name="ElementShortName">s_mem_2_reg</obj_property>
+      <obj_property name="ObjectShortName">s_mem_2_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_alu_src" type="logic">
+      <obj_property name="ElementShortName">s_alu_src</obj_property>
+      <obj_property name="ObjectShortName">s_alu_src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_branch_en" type="logic">
+      <obj_property name="ElementShortName">s_branch_en</obj_property>
+      <obj_property name="ObjectShortName">s_branch_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_jump" type="logic">
+      <obj_property name="ElementShortName">s_jump</obj_property>
+      <obj_property name="ObjectShortName">s_jump</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_sw_en" type="logic">
+      <obj_property name="ElementShortName">s_sw_en</obj_property>
+      <obj_property name="ObjectShortName">s_sw_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_jr_src" type="logic">
+      <obj_property name="ElementShortName">s_jr_src</obj_property>
+      <obj_property name="ObjectShortName">s_jr_src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_lw_vs_imm" type="logic">
+      <obj_property name="ElementShortName">s_lw_vs_imm</obj_property>
+      <obj_property name="ObjectShortName">s_lw_vs_imm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_alu_srcA" type="array">
+      <obj_property name="ElementShortName">s_alu_srcA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_alu_srcA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_alu_srcB" type="array">
+      <obj_property name="ElementShortName">s_alu_srcB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_alu_srcB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_rf_rd2" type="array">
+      <obj_property name="ElementShortName">s_rf_rd2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_rf_rd2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_sign_ext_in" type="array">
+      <obj_property name="ElementShortName">s_sign_ext_in[4:0]</obj_property>
+      <obj_property name="ObjectShortName">s_sign_ext_in[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_sign_ext_out" type="array">
+      <obj_property name="ElementShortName">s_sign_ext_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_sign_ext_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_lw_vs_imm_mux_out" type="array">
+      <obj_property name="ElementShortName">s_lw_vs_imm_mux_out[4:0]</obj_property>
+      <obj_property name="ObjectShortName">s_lw_vs_imm_mux_out[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_rf_A1" type="array">
+      <obj_property name="ElementShortName">s_rf_A1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">s_rf_A1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_rf_A2" type="array">
+      <obj_property name="ElementShortName">s_rf_A2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">s_rf_A2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/s_mem_2_reg_mux_out" type="array">
+      <obj_property name="ElementShortName">s_mem_2_reg_mux_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_mem_2_reg_mux_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/dmem1/i_we" type="logic">
+      <obj_property name="ElementShortName">i_we</obj_property>
+      <obj_property name="ObjectShortName">i_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/dmem1/i_a" type="array">
+      <obj_property name="ElementShortName">i_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/dmem1/i_wd" type="array">
+      <obj_property name="ElementShortName">i_wd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_wd[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/dmem1/o_rd" type="array">
+      <obj_property name="ElementShortName">o_rd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_rd[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/dmem1/mem" type="array">
+      <obj_property name="ElementShortName">mem[63:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem[63:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/m_rf/i_we3" type="logic">
+      <obj_property name="ElementShortName">i_we3</obj_property>
+      <obj_property name="ObjectShortName">i_we3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/m_rf/i_ra1" type="array">
+      <obj_property name="ElementShortName">i_ra1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">i_ra1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/m_rf/i_ra2" type="array">
+      <obj_property name="ElementShortName">i_ra2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">i_ra2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/m_rf/i_wa3" type="array">
+      <obj_property name="ElementShortName">i_wa3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">i_wa3[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/m_rf/i_wd3" type="array">
+      <obj_property name="ElementShortName">i_wd3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_wd3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/m_rf/o_rd1" type="array">
+      <obj_property name="ElementShortName">o_rd1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_rd1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/m_rf/b_rd2" type="array">
+      <obj_property name="ElementShortName">b_rd2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b_rd2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/mips1/m_rf/mem" type="array">
+      <obj_property name="ElementShortName">mem[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem[31:0][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>
