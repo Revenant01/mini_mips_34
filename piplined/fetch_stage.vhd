@@ -71,13 +71,15 @@ ARCHITECTURE structural OF fetch_stage IS
     );
   END COMPONENT;
 
-  SIGNAL s_mux1_res : STD_LOGIC_VECTOR (31 DOWNTO 0) := (OTHERS => '0');
-  SIGNAL s_pc_next : STD_LOGIC_VECTOR (31 DOWNTO 0) := (OTHERS => '0');
+  SIGNAL s_mux1_res : STD_LOGIC_VECTOR (31 DOWNTO 0);
+  SIGNAL s_pc_next : STD_LOGIC_VECTOR (31 DOWNTO 0);
   SIGNAL s_pc : STD_LOGIC_VECTOR (31 DOWNTO 0) := (OTHERS => '0');
   SIGNAL s_instF : STD_LOGIC_VECTOR (31 DOWNTO 0) := (OTHERS => '0');
   SIGNAL s_pc_plus4 : STD_LOGIC_VECTOR (31 DOWNTO 0) := (OTHERS => '0');
-
+  SIGNAL s_clr_pip_reg : STD_LOGIC := '0';
 BEGIN
+
+  s_clr_pip_reg <= i_jump_enD OR i_branchD;
 
   m_pc_reg : generic_reg
   GENERIC MAP(32)
@@ -99,7 +101,7 @@ BEGIN
   m_adder : adder
   PORT MAP(
     i_a => s_pc,
-    i_b => X"00000004",
+    i_b => X"00000001",
     o_sum => s_pc_plus4
   );
 
@@ -125,7 +127,7 @@ BEGIN
   PORT MAP(
     i_clk => i_clk,
     i_rst => i_rst,
-    i_clr => i_branchD,
+    i_clr => s_clr_pip_reg,
 
     i_nEN => i_stallD,
     i_instF => s_instF,
