@@ -67,7 +67,7 @@ BEGIN
     ELSIF rising_edge(i_clk) THEN
       IF (i_clr = '1') THEN
         o_reg_writeE <= '0';
-        o_mem_2_regE <= '0';
+        o_mem_2_regE <= '1';
         o_mem_writeE <= '0';
         o_alu_srcE <= '0';
         o_alu_controlE <= "00";

@@ -29,8 +29,8 @@ ENTITY meomry_stage IS
     o_read_dataW : OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
 
     -- propagating register destination 
-    i_RdM : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
-    o_RdW : OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
+    i_RdM : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+    o_RdW : OUT STD_LOGIC_VECTOR (4 DOWNTO 0)
   );
 
 END ENTITY meomry_stage;

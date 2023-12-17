@@ -188,7 +188,7 @@ BEGIN
 
   o_RsD <= s_rf_ra1;
   o_RtD <= s_rf_ra2;
-  o_branchD <= s_branchD;
+  o_branchD <= s_branch_enD;
   o_jumpD <= s_jumpD;
 
   m_controller : control_unit

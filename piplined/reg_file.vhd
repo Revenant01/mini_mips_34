@@ -1,3 +1,4 @@
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
@@ -28,14 +29,15 @@ BEGIN
     IF (i_rst = '1') THEN
       mem <= (OTHERS => X"00000000");
     ELSE
-      IF rising_edge(i_clk) THEN
+      IF falling_edge(i_clk) THEN
         IF i_we3 = '1' THEN
           mem(to_integer(unsigned(i_wa3))) <= i_wd3;
         END IF;
       END IF;
     END IF;
   END PROCESS;
-  PROCESS (i_ra1, i_ra2, i_rst) BEGIN
+
+  PROCESS (i_ra1, i_ra2, i_rst, mem) BEGIN
     IF (to_integer(unsigned(i_ra1)) = 0) THEN
       o_rd1 <= X"00000000"; -- register 0 holds 0
     ELSE
@@ -47,4 +49,5 @@ BEGIN
       o_rd2 <= mem(to_integer(unsigned(i_ra2)));
     END IF;
   END PROCESS;
+
 END;

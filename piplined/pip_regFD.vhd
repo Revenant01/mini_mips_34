@@ -25,7 +25,7 @@ BEGIN
   BEGIN
 
     IF (i_rst = '1') THEN
-      o_instD <= (OTHERS => '0');
+      o_instD <= (OTHERS => 'X');
     ELSE
       IF (s_EN = '1') THEN
         IF rising_edge (i_clk) THEN

@@ -182,7 +182,9 @@ ARCHITECTURE structural OF mips IS
 
   COMPONENT hazard_unit IS
     PORT (
-         o_stallF : OUT STD_LOGIC;
+    i_rst : IN STD_LOGIC;
+
+    o_stallF : OUT STD_LOGIC;
 
     o_stallD : OUT STD_LOGIC;
     i_RsD : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
@@ -358,6 +360,7 @@ BEGIN
 
   m_hu : hazard_unit
   PORT MAP(
+    i_rst => i_rst,
     o_stallF => s_stallF_HF,
     o_stallD => s_stallD_HF,
     i_RsD => s_RsD_DH,

@@ -81,53 +81,53 @@ ARCHITECTURE structural OF mips IS
     PORT (
 
       i_clk : STD_LOGIC;
-    i_rst : STD_LOGIC;
-    i_clr : STD_LOGIC;
-    -- alu srcs 
-    i_rf_rd1E : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
-    i_rf_rd2E : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+      i_rst : STD_LOGIC;
+      i_clr : STD_LOGIC;
+      -- alu srcs 
+      i_rf_rd1E : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+      i_rf_rd2E : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
 
-    -- only for srcB
-    i_sign_extE : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+      -- only for srcB
+      i_sign_extE : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
 
-    -- feedback signals for the forwarding 
-    i_alu_outM : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
-    i_resultW : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+      -- feedback signals for the forwarding 
+      i_alu_outM : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+      i_resultW : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
 
-    -- internal blocks control singls
-    i_alu_ctrlE : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
-    i_alu_srcE : IN STD_LOGIC;
+      -- internal blocks control singls
+      i_alu_ctrlE : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
+      i_alu_srcE : IN STD_LOGIC;
 
-    -- propagating control signals 
-    i_reg_writeE : IN STD_LOGIC;
-    o_reg_writeM : OUT STD_LOGIC;
+      -- propagating control signals 
+      i_reg_writeE : IN STD_LOGIC;
+      o_reg_writeM : OUT STD_LOGIC;
 
-    i_mem_2_regE : IN STD_LOGIC;
-    o_mem_2_regM : OUT STD_LOGIC;
+      i_mem_2_regE : IN STD_LOGIC;
+      o_mem_2_regM : OUT STD_LOGIC;
 
-    i_mem_writeE : IN STD_LOGIC;
-    o_mem_writeM : OUT STD_LOGIC;
+      i_mem_writeE : IN STD_LOGIC;
+      o_mem_writeM : OUT STD_LOGIC;
 
-    -- hazard unit control sigals 
-    i_forwardAE : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
-    i_forwardBE : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
+      -- hazard unit control sigals 
+      i_forwardAE : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
+      i_forwardBE : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
 
-    -- outputs  
-    o_alu_outM : OUT STD_LOGIC_VECTOR (31 DOWNTO 0); 
-    o_write_dataM : OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
+      -- outputs  
+      o_alu_outM : OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
+      o_write_dataM : OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
 
-    -- propagating
-    i_RdE : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
-    o_RdM : OUT STD_LOGIC_VECTOR (4 DOWNTO 0);
-    
-    o_RdE : OUT STD_LOGIC_VECTOR (4 DOWNTO 0);
+      -- propagating
+      i_RdE : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+      o_RdM : OUT STD_LOGIC_VECTOR (4 DOWNTO 0);
 
-    -- hazard unit registers input--> outputs 
-    i_RsE : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
-    i_RtE : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+      o_RdE : OUT STD_LOGIC_VECTOR (4 DOWNTO 0);
 
-    o_RsE : OUT STD_LOGIC_VECTOR (4 DOWNTO 0);
-    o_RtE : OUT STD_LOGIC_VECTOR (4 DOWNTO 0)
+      -- hazard unit registers input--> outputs 
+      i_RsE : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+      i_RtE : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+
+      o_RsE : OUT STD_LOGIC_VECTOR (4 DOWNTO 0);
+      o_RtE : OUT STD_LOGIC_VECTOR (4 DOWNTO 0)
     );
 
   END COMPONENT execut_stage;
@@ -182,30 +182,32 @@ ARCHITECTURE structural OF mips IS
 
   COMPONENT hazard_unit IS
     PORT (
-         o_stallF : OUT STD_LOGIC;
+      i_rst : IN STD_LOGIC;
 
-    o_stallD : OUT STD_LOGIC;
-    i_RsD : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
-    i_RtD : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
-    i_branchD : IN STD_LOGIC;
-    o_forwardAD : OUT STD_LOGIC;
-    o_forwardBD : OUT STD_LOGIC;
+      o_stallF : OUT STD_LOGIC;
 
-    o_flushE : OUT STD_LOGIC;
-    i_RsE : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
-    i_RtE : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
-    i_RdE : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
-    i_mem_2_regE : IN STD_LOGIC;
-    i_reg_writeE : IN STD_LOGIC;
-    o_forwardAE : OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
-    o_forwardBE : OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
+      o_stallD : OUT STD_LOGIC;
+      i_RsD : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+      i_RtD : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+      i_branchD : IN STD_LOGIC;
+      o_forwardAD : OUT STD_LOGIC;
+      o_forwardBD : OUT STD_LOGIC;
 
-    i_mem_2_regM : IN STD_LOGIC;
-    i_reg_writeM : IN STD_LOGIC;
-    i_reg_writeW : IN STD_LOGIC;
-    i_RdM : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+      o_flushE : OUT STD_LOGIC;
+      i_RsE : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+      i_RtE : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+      i_RdE : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+      i_mem_2_regE : IN STD_LOGIC;
+      i_reg_writeE : IN STD_LOGIC;
+      o_forwardAE : OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
+      o_forwardBE : OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
 
-    i_RdW : IN STD_LOGIC_VECTOR (4 DOWNTO 0)
+      i_mem_2_regM : IN STD_LOGIC;
+      i_reg_writeM : IN STD_LOGIC;
+      i_reg_writeW : IN STD_LOGIC;
+      i_RdM : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+
+      i_RdW : IN STD_LOGIC_VECTOR (4 DOWNTO 0)
     );
 
   END COMPONENT hazard_unit;
@@ -358,6 +360,7 @@ BEGIN
 
   m_hu : hazard_unit
   PORT MAP(
+    i_rst => i_rst,
     o_stallF => s_stallF_HF,
     o_stallD => s_stallD_HF,
     i_RsD => s_RsD_DH,
@@ -368,14 +371,14 @@ BEGIN
     o_flushE => s_flushE_HD,
     i_RsE => s_RsD_EH,
     i_RtE => s_RtD_EH,
-    i_RdE => s_Rd_EH, 
+    i_RdE => s_Rd_EH,
     i_mem_2_regE => s_mem_2_reg_DE,
     i_reg_writeE => s_reg_write_DE,
     o_forwardAE => s_forwardAD_HE,
     o_forwardBE => s_forwardBD_HE,
     i_mem_2_regM => s_mem_2_reg_EM,
     i_reg_writeM => s_reg_write_EM,
-    i_reg_writeW => s_reg_write_WD, 
+    i_reg_writeW => s_reg_write_WD,
     i_RdM => s_Rd_EM,
     i_RdW => s_Rd_WD
   );

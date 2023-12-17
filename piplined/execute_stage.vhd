@@ -4,7 +4,7 @@ USE IEEE.std_logic_unsigned.ALL;
 
 ENTITY execut_stage IS
   PORT (
-  
+
     i_clk : STD_LOGIC;
     i_rst : STD_LOGIC;
     i_clr : STD_LOGIC;
@@ -38,13 +38,13 @@ ENTITY execut_stage IS
     i_forwardBE : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
 
     -- outputs  
-    o_alu_outM : OUT STD_LOGIC_VECTOR (31 DOWNTO 0); 
+    o_alu_outM : OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
     o_write_dataM : OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
 
     -- propagating
     i_RdE : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
     o_RdM : OUT STD_LOGIC_VECTOR (4 DOWNTO 0);
-    
+
     o_RdE : OUT STD_LOGIC_VECTOR (4 DOWNTO 0);
 
     -- hazard unit registers input--> outputs 
@@ -63,7 +63,7 @@ ARCHITECTURE STRUCT OF execut_stage IS
     PORT (
       i_a, i_b : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       i_ctrl : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
-      o_result : BUFFER STD_LOGIC_VECTOR(31 DOWNTO 0)
+      o_result : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
     );
 
   END COMPONENT;

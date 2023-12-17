@@ -14,7 +14,7 @@ Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
 Compiling package ieee.std_logic_textio
 Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.generic_reg [\generic_reg(w=32)\]
+Compiling architecture sequential of entity xil_defaultlib.generic_reg [\generic_reg(w=32)\]
 Compiling architecture rtl of entity xil_defaultlib.imem [imem_default]
 Compiling architecture rtl of entity xil_defaultlib.adder [adder_default]
 Compiling architecture rtl of entity xil_defaultlib.MUX2X1 [\MUX2X1(width=32)\]

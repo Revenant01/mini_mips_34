@@ -15,11 +15,6 @@ ARCHITECTURE RTL OF dmem IS
   TYPE ramtype IS ARRAY (63 DOWNTO 0) OF STD_LOGIC_VECTOR(31 DOWNTO 0);
   SIGNAL mem : ramtype;
 BEGIN
-
-
-  mem(10) <= X"00000005";
-  mem(9)  <= X"00000003";
-  mem(8)  <= X"00000007";
   write_process : PROCESS (i_clk, i_rst)
   BEGIN
     IF rising_edge(i_clk) THEN
