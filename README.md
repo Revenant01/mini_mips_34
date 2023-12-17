@@ -78,10 +78,14 @@ Program memory stores opcodes, arguments, and data (Van-Neumann architecture), w
 
 ## Deliverables
 
-1. A meticulously detailed drawing of the Register file and its internal components, including signal names.
-2. An intricate illustration of the RAW hazard resolving technique, complemented by supporting drawings.
-3. Neatly crafted drawings depicting Fetch, Decode, Memory, and Write Back stages, accompanied by fully functional VHDL codes for these stages.
-4. A comprehensive Control Unit block and the final project delivery.
+# Schematic of the design 
+
+![image](https://github.com/Revenant01/mini_mips_34/assets/99401515/e9b3fe9f-cead-475b-9cc1-a61df326d12b)
+
+# VIVADO Desing 
+
+
+
 
 ---
 
